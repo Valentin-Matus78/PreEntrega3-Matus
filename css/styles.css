@@ -1,0 +1,566 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  align-items: start;
+  background-image: url("../img/fondo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+header .logo {
+  max-width: 300px;
+  height: auto;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .titulo1,
+header .titulo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+  margin: 0;
+}
+header .titulo1 h1 {
+  font-family: "Great Vibes";
+  font-weight: bold;
+  font-size: 65px;
+  font-style: italic;
+  margin-top: 180px;
+  margin-bottom: 40px;
+}
+header .titulo2 h2 {
+  font-family: "Sevillana";
+  font-weight: bold;
+  font-size: 40px;
+  font-style: italic;
+  margin-top: -200px;
+}
+
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: 400px;
+    margin-top: -30px;
+  }
+  header .titulo1 h1 {
+    font-size: 35px !important;
+    margin-top: 150px !important;
+  }
+  header .titulo2 h2 {
+    font-size: 25px !important;
+    margin-top: -180px !important;
+  }
+  header .logo {
+    max-width: 190px !important;
+    margin-top: 50px !important;
+  }
+  header .menu ul li a {
+    font-size: 11px !important;
+  }
+  header .tituloMenu {
+    width: 80%;
+  }
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ff69b4;
+  list-style: none;
+  padding: 0%;
+  margin: 0;
+}
+.menu ul li {
+  flex: 1;
+  min-width: 20%;
+  font-weight: bold;
+  font: 1em sans-serif;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 5px;
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+.menu ul li a:hover {
+  background-color: #ff1493;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tituloMenu {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #e0f7fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+.tituloMenu h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 24px;
+  color: #000;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: rgb(244, 205, 211);
+}
+
+.footer {
+  background-color: rgba(95, 87, 87, 0.7843137255);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footer .footerContenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px;
+}
+.footer .footerContenido .footerNosotros,
+.footer .footerContenido .footerSocial {
+  margin: 10px 0;
+}
+.footer .footerContenido .footerNosotros h3,
+.footer .footerContenido .footerSocial h3 {
+  font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: white;
+  border-bottom: 2px solid rgb(244, 205, 211);
+}
+.footer .footerContenido .footerNosotros p,
+.footer .footerContenido .footerSocial p {
+  font-size: 14px;
+  line-height: 1.6;
+  font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footer .footerContenido .socialIcons {
+  display: flex;
+  gap: 10px;
+}
+.footer .footerContenido .socialIcons a img {
+  border-radius: 50%;
+}
+.footer .footerContenido .footerDerechos {
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .footerContenido {
+    padding: 0 10px;
+  }
+  .footerContenido .footerNosotros p {
+    font-size: 12px;
+  }
+  .footerContenido .footerSocial p {
+    font-size: 12px;
+  }
+}
+.preguntasSeccion {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 768px) {
+  .preguntasSeccion {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.preguntasSeccion .pregunta {
+  background-color: #e0f7fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@media (min-width: 768px) {
+  .preguntasSeccion .pregunta {
+    padding: 25px;
+  }
+}
+.preguntasSeccion .respuestaPregunta {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 130%;
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+@media (min-width: 768px) {
+  .preguntasSeccion .respuestaPregunta {
+    padding: 35px;
+    font-size: 30px;
+  }
+}
+
+.imagenFondo {
+  background-image: url("../img/fondoPregunta1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 200px;
+  margin: -5px 0;
+  margin-bottom: 10px;
+}
+
+.imagenBoton {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.imagenHonoka {
+  width: 500px;
+  height: auto;
+  margin-right: -40px;
+}
+
+.boton {
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  text-align: center;
+  margin-right: 100px;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.boton:hover {
+  background-color: #ff1493;
+}
+
+@media (max-width: 768px) {
+  .boton {
+    padding: 5px;
+    font-size: 14px;
+    margin: 20px auto;
+  }
+  .imagenHonoka {
+    width: 70%;
+    height: 0 auto;
+    margin-right: -15%;
+    display: block;
+    margin-left: -5%;
+  }
+  .imagenFondo {
+    height: 100px;
+  }
+}
+.grupo {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ffe7e7;
+  padding: 15px;
+  border-radius: 10px;
+}
+.grupo .imagenGrupo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+.grupo h4 {
+  font-size: 24px;
+  margin: 10px 0;
+  font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.grupo p {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .containerGrupos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .containerGrupos .grupo {
+    flex: 1 1 35%;
+    max-width: 35%;
+  }
+  .containerGrupos .grupo h4 {
+    font-size: 32px;
+  }
+  .containerGrupos .grupo p {
+    font-size: 19px;
+  }
+}
+@media (max-width: 767px) {
+  .containerGrupos {
+    display: block;
+  }
+  .containerGrupos .grupo {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containerGrupos .grupo .imagenGrupo {
+    max-width: 200px;
+  }
+  .containerGrupos .grupo h4 {
+    font-size: 23px;
+  }
+  .containerGrupos .grupo p {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+.personaje {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffe7e7;
+  padding: 15px;
+  border-radius: 10px;
+}
+.personaje .imagenPersonaje {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+.personaje h4 {
+  font-size: 24px;
+  margin: 10px 0;
+  font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.personaje p {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .containerPersonajes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .containerPersonajes .personaje {
+    flex: 1 1 35%;
+    max-width: 35%;
+  }
+  .containerPersonajes .personaje h4 {
+    font-size: 32px;
+  }
+  .containerPersonajes .personaje p {
+    font-size: 19px;
+  }
+}
+@media (max-width: 767px) {
+  .containerPersonajes {
+    display: block;
+  }
+  .containerPersonajes .personaje {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containerPersonajes .personaje .imagenPersonaje {
+    max-width: 150px;
+  }
+  .containerPersonajes .personaje h4 {
+    font-size: 23px;
+  }
+  .containerPersonajes .personaje p {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+.characteriaLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.characteriaLinks .link {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
+  transition: 0.3s ease, 0.3s ease;
+}
+.characteriaLinks .link:hover {
+  transform: scale(1.1);
+}
+.characteriaLinks .link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.characteriaLinks .link img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.characteriaLinks .link h4 {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .characteriaLinks {
+    justify-content: space-between;
+    margin: 30px;
+    margin-right: 130px;
+    margin-left: 130px;
+  }
+  .link {
+    width: 200px;
+    height: 200px;
+  }
+  .link a {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .characteriaLinks {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .link {
+    width: 45%;
+    max-width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .link img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 20px;
+}
+.galeria .galeriaCarousel {
+  width: 100%;
+  max-width: 500px;
+}
+.galeria .nombreCarousel h5 {
+  text-align: center;
+  font-size: 26px;
+  color: #000000;
+  background-color: #c2f2ff;
+  padding: 10px;
+  border-radius: 10px;
+  font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.galeria .carousel-inner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 3%;
+}
+.galeria .carousel-control-prev-icon,
+.galeria .carousel-control-next-icon {
+  background-color: #ffc3f8;
+  border-radius: 50%;
+}
+.galeria .carousel-control-prev-icon:hover,
+.galeria .carousel-control-next-icon:hover {
+  background-color: #ff6dfa;
+}
+
+@media (max-width: 768px) {
+  .galeriaCarousel {
+    max-width: 80%;
+  }
+  .nombreCarousel h5 {
+    font-size: 15px;
+    padding: 5px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

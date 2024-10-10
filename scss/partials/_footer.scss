@@ -1,0 +1,71 @@
+.footer {
+  background-color: $color-footer;
+  color: $color-fuente;
+  padding: 20px;
+  text-align: center;
+  font-family: $fuente-parrafos;
+
+  .footerContenido {
+    @include column-flex;
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+
+    .footerNosotros,
+    .footerSocial {
+      margin: 10px 0;
+
+      h3 {
+        font: $fuente-titulos;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: $color-fuente;
+        border-bottom: 2px solid $color-backgroundhtml;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.6;
+        font: $fuente-parrafos;
+      }
+    }
+
+    .socialIcons {
+      display: flex;
+      gap: 10px;
+
+      a {
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .footerDerechos {
+      margin-top: 20px;
+      font-size: 14px;
+      border-top: 1px solid #444;
+      padding: 10px 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContenido {
+    padding: 0 10px;
+
+    .footerNosotros {
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .footerSocial {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+  

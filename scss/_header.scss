@@ -1,0 +1,99 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    align-items: start;
+    background-image: url("../img/fondo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+  
+    .logo {
+      max-width: 300px;
+      height: auto;
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .titulo1,
+    .titulo2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      color: #ffffff;
+      margin: 0;
+    }
+  
+    .titulo1 {
+      h1 {
+        font-family: "Great Vibes";
+        font-weight: bold;
+        font-size: 65px;
+        font-style: italic;
+        margin-top: 180px;
+        margin-bottom: 40px;
+      }
+    }
+  
+    .titulo2 {
+      h2 {
+        font-family: "Sevillana";
+        font-weight: bold;
+        font-size: 40px;
+        font-style: italic;
+        margin-top: -200px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      grid-template-columns: 1fr;
+      text-align: center;
+      height: 400px;
+      margin-top: -30px;
+  
+      .titulo1 {
+        h1 {
+          font-size: 35px !important;
+          margin-top: 150px !important;
+        }
+      }
+  
+      .titulo2 {
+        h2 {
+          font-size: 25px !important;
+          margin-top: -180px !important;
+        }
+      }
+  
+      .logo {
+        max-width: 190px !important;
+        margin-top: 50px !important;
+      }
+  
+      .menu {
+        ul {
+          li {
+            a {
+              font-size: 11px !important;
+            }
+          }
+        }
+      }
+  
+      .tituloMenu {
+        width: 80%;
+      }
+    }
+  }
+  

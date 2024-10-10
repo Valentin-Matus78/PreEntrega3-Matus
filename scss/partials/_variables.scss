@@ -1,0 +1,66 @@
+// Variables
+$color-fondo-animaciones: #ffe7e7;
+$color-fondo-titulos: #e0f7fa;
+$color-botones: #ff69b4;
+$color-fuente: white;
+$color-hover: #ff1493;
+$color-fondo-p: #ffffff;
+$color-fuente-2: #000;
+$color-backgroundhtml: rgb(244, 205, 211);
+$color-footer: #5f5757c8;
+
+$fuente-titulos: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$fuente-parrafos: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$fuente-botones: 'Arial Narrow';
+$fuente-menu:  'Trebuchet MS';
+
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+
+//Mixins
+@mixin anchoAlto {
+    height: 100%;
+    width: 100%;
+}
+
+@mixin center-flex {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@mixin marginTopBottom {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@mixin margin-leftright-auto{
+    margin-left:auto;
+    margin-right: auto;
+}
+
+@mixin block-flex{
+    display: block;
+    text-align: center;
+}
+
+@mixin flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin column-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin row-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+

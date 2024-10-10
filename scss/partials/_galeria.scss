@@ -1,0 +1,57 @@
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 20px;
+
+  .galeriaCarousel {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .nombreCarousel {
+    h5 {
+      text-align: center;
+      font-size: 26px;
+      color: #000000;
+      background-color: #c2f2ff;
+      padding: 10px;
+      border-radius: 10px;
+      font: $fuente-titulos;
+    }
+  }
+
+  .carousel-inner {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 3%;
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #ffc3f8;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: #ff6dfa;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .galeriaCarousel {
+    max-width: 80%;
+  }
+
+  .nombreCarousel {
+    h5 {
+      font-size: 15px;
+      padding: 5px;
+    }
+  }
+}
