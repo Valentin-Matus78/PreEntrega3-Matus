@@ -1,9 +1,14 @@
+@mixin fondo{
+  background-image: url("../img/fondo.png");
+}
+
+
 header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     align-items: start;
-    background-image: url("../img/fondo.png");
+    @include fondo;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
